@@ -1,33 +1,29 @@
-/*
-Lesson 23.April going through
--Array
--For Loops
-*/
+function addTodoTask() {
+  event.preventDefault();
+  // Array without content
+  const todoTask = [];
+  // Get fetches retrives from HTML document
+  const taskInput = document.querySelector('#taskInput').value;
+  // Fills the array with content from taskInput
+  todoTask.push(taskInput);
+  // Checks if todoTask have content
+  console.log(todoTask);
+}
 
-const fruitBowl = ['Banana', 'Orange', 'Apple', 'Grape'];
-console.log(fruitBowl);
-console.log(fruitBowl[0]);
+const taskButton = document.querySelector('#taskButton');
+console.log(taskButton);
 
-// For loop that loops through our array
-for (
-      // New variable called "index" is snaller then length of our fruitbowl
-      let index = 0;
-      // Checks if index is smaller then the length of our fruitbowl 
-      index < fruitBowl.length;
-      // Reassign a new value of index
-      index = index + index
-      ) {
-         console.log(fruitBowl);
-         break;
-      };
+taskButton.addEventListener('click', addTodoTask);
+// Loops through array and for new data
+for (index = 0; index < TodoTasks.length; index = index + 1) {
+  // Get data from our loop using to run through whats inside array
+  const newTodoTask = todoTask[index];
 
-// Traditional for loop
-for ( let i = 0;i < fruitBowl.length;
-    i++) {
-    console.log(fruitBowl[i]);
-    
-    };
+  //Create a new HTML-element "li"
+  const newListItem = document.createElement('li');
+  console.log(newListItem);
 
-
-
+  // Set that the element "li" have content from our looped through data
+  newListItem.textContent = newTodoTasks;
+}
 

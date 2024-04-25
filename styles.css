@@ -2,7 +2,7 @@ h1{
 text-align: center;
 color: red;
 position: relative;
-bottom: 25px;
+bottom: 45px;
 left: 165px;
 }
 
@@ -11,7 +11,7 @@ body{
  width: 100vh;
  display: flex;
  align-items: center;
-
+ background-color: chocolate;
 
 }
 
@@ -26,3 +26,4 @@ body{
 align-items: center;
 cursor: pointer;
 }
+
