@@ -3,17 +3,32 @@
   <head>
     <link rel="stylesheet" href="styles.css" />
     <script defer src="script.js"></script>
-    <script defer src="script2.js"></script>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
   <body>
-    <h1>TODO-APP</h1>
-    <form>
-      <input type="text" id="taskInput"/>
-  <button id="taskButton" class="taskButton">Add todo</button>
-    </form>
+    <div class="container">
+        <div class="addTask">
+             <input type="text" placeholder="Add a Task">
+             <button>ADD</button>
+        </div>
+        <ol class="notCompleted">
+          <h2>Not Completed</h2>
+          <li>Task
+              <button<i class="fa-solid fa-circle-check"></i></button>
+              <button><i class="fa-regular fa-trash-can"></i></button>
+          </li>
+        </ol>
+        <ol class="Completed">
+          <h3>Completed</h3>
+          <li>Task
+           
+            <button><i class="fa-regular fa-trash-can"></i></button>
+        </li>
+        </ol>
+    </div>
   </body>
 </html>

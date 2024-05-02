@@ -69,13 +69,6 @@ h3 {
  color: green;
 }
 
-h2 {
-    font-size: 20px;
-    text-transform: uppercase;
-    text-align: center;
-    color: red;
-   }
-
 ol {
  list-style: none;
  counter-reset: my-counter;
